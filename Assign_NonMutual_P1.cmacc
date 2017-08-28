@@ -1,0 +1,10 @@
+$ assign = [./AssignPref.cmacc]
+
+$ merger = [./AssignMerger.cmacc]
+
+$ benefit = [./AssignBinding.cmacc]
+
+
+{{assign.not_P2}} 
+{{merger.no_Except}} 
+{{benefit.p2_Binding}}

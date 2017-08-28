@@ -1,0 +1,15 @@
+{
+  "name": "cmacc-form-nda",
+  "version": "1.1.0",
+  "description": "NDA form in cmacc",
+  "main": "index.js",
+  "repository": "https://github.com/cmacclang/cmacc-form-nda.git",
+  "author": "Marc Dangeard <marc@dangeard.com>",
+  "license": "MIT",
+  "flat": true,
+  "dependencies": {
+    "cmacc-example-id": "cmacclang/cmacc-example-id#v1.1.2",
+    "cmacc-form-generalclauses": "cmacclang/cmacc-form-generalclauses#v1.1.0",
+    "cmacc-lib-us": "cmacclang/cmacc-lib-us#v1.1.3"
+  }
+}

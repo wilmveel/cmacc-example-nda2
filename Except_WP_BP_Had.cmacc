@@ -1,0 +1,8 @@
+$ except = [./ExceptOptions.cmacc]
+
+
+ 1.{{except.was_Public}};
+
+ 2.{{except.becomes_Public}}; or
+
+ 3.{{except.had}}.

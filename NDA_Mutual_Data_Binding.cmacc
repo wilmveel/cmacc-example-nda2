@@ -1,0 +1,113 @@
+// This is where is enter actual data deal points like the name of the parties, prices, etc...
+
+// effective date of agreement
+$ effective_Date = "Effective_Date"
+
+// Party 1 info ----------
+
+$ p1 = [github:///cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+
+// entity full name
+$ party1_entity_Full_Name = p1.full_Name
+
+// entity address
+$ party1_entity_Address = [github:///cmacclang/cmacc-lib-us/dev/_adr_12.cmacc]
+$ party1_entity_Address.adr = p1.adr
+
+// entity description
+$ party1_a_Entity_Description = p1.entity_a
+
+// entity address reference (office, headquarter, etc...)
+$ party1_entity_Adr_Type = p1.adr_Type
+
+// entity name, description, address
+$ p1_NEA = [github:///cmacclang/cmacc-lib-us/dev/_entity_NEA.cmacc]
+$ p1_NEA.entity_Address = party1_entity_Address
+$ p1_NEA.a_Entity_Description = party1_a_Entity_Description
+$ p1_NEA.entity_Adr_Type = party1_entity_Adr_Type
+$ p1_NEA.entity_Full_Name = party1_entity_Full_Name
+
+$ party1_Sign_Rep_Full_Name = p1.sign_Rep.full_Name
+
+$ party1_Sign_Rep_Role = p1.sign_Title
+
+// Party 2 info ----------
+
+$ p2 = [github:///cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+
+// entity full name
+$ party2_entity_Full_Name = p2.full_Name
+
+// entity address
+$ party2_entity_Address = [github:///cmacclang/cmacc-lib-us/dev/_adr_12.cmacc]
+$ party2_entity_Address.adr = p2.adr
+
+// entity description
+$ party2_a_Entity_Description = p2.entity_a
+
+// entity address reference (office, headquarter, etc...)
+$ party2_entity_Adr_Type = p2.adr_Type
+
+// entity name, description, address
+$ p2_NEA = [github:///cmacclang/cmacc-lib-us/dev/_entity_NEA.cmacc]
+$ p2_NEA.entity_Address = party2_entity_Address
+$ p2_NEA.a_Entity_Description = party2_a_Entity_Description
+$ p2_NEA.entity_Adr_Type = party2_entity_Adr_Type
+$ p2_NEA.entity_Full_Name = party2_entity_Full_Name
+
+$ party2_Sign_Rep_Full_Name = p2.sign_Rep.full_Name
+
+$ party2_Sign_Rep_Role = p2.sign_Title
+
+// Party 1 date and place of signature
+
+$ sign_Party1_Place = "sign_Party1_Place"
+
+$ sign_Party1_Date = "sign_Party1_Date"
+
+// Party 2 date and place of signature
+
+$ sign_Party2_Place = "sign_Party2_Place"
+
+$ sign_Party2_Date = "sign_Party2_Date"
+
+// Description of information disclosed
+
+$ subject = "the current, future, and proposed products and services of"
+
+$ info_Types = "proprietary and confidential information, ideas, techniques, sketches, drawings, works of authorship, models, inventions, know-how, processes, apparatuses, equipment, algorithms, software programs, software source documents, and formulae"
+
+$ info_Examples = "research, experimental work, development, design details and specifications, engineering, financial information, procurement requirements, purchasing, manufacturing, customer lists, investors, employees, business and contractual relationships, business forecasts, sales and merchandising, and marketing plans"
+
+// Duration of agreement
+$ life_End_YMD = "Life_End_YMD"
+
+// Period for notices
+$ notice_Period_TimeSpan = "thirty (30) days"
+
+//------------
+// Document sections
+
+$ agreement = [./NDA_Mutual.cmacc]
+
+$ agreement.intro.effective_Date = effective_Date
+$ agreement.intro.p1_NEA = "{{p1_NEA}}"
+$ agreement.intro.p2_NEA = "{{p2_NEA}}"
+
+$ agreement.confid.conf_Infos.subject = subject
+$ agreement.confid.conf_Infos.info_Types = info_Types
+$ agreement.confid.conf_Infos.info_Examples = info_Examples
+
+$ agreement.term.life_End_YMD = life_End_YMD
+$ agreement.term.notice_Period_TimeSpan = notice_Period_TimeSpan
+
+$ agreement.closing.party1_Sign_Rep_Full_Name = party1_Sign_Rep_Full_Name
+$ agreement.closing.party1_Sign_Rep_Role = party1_Sign_Rep_Role
+$ agreement.closing.party1_Sign_Place = sign_Party1_Place
+$ agreement.closing.party1_Sign_Date = sign_Party1_Date
+$ agreement.closing.party2_Sign_Rep_Full_Name = party2_Sign_Rep_Full_Name
+$ agreement.closing.party2_Sign_Rep_Role = party2_Sign_Rep_Role
+$ agreement.closing.party2_Sign_Place = sign_Party2_Place
+$ agreement.closing.party2_Sign_Date = sign_Party2_Date
+
+{{agreement}}

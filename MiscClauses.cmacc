@@ -1,0 +1,52 @@
+$ Xnum = "Xnum"
+
+$ amend = [github:///cmacclang/cmacc-form-generalclauses/dev/Amend.cmacc]
+
+$ assign = [./Assign_Mutual.cmacc]
+
+$ counterparts = [github:///cmacclang/cmacc-form-generalclauses/dev/Counterparts.cmacc]
+
+$ entire = [./Entire.cmacc]
+
+$ notice = [./Notice.cmacc]
+
+$ sever = [github:///cmacclang/cmacc-form-generalclauses/dev/Severability.cmacc]
+
+$ usexport = [./USExport.cmacc]
+
+$ waive = [github:///cmacclang/cmacc-form-generalclauses/dev/NoWaiver.cmacc]
+
+
+### {{Xnum}}.Miscellaneous
+
+ {{Xnum}}.1.Amendment
+
+{{amend}}
+
+ {{Xnum}}.2.Successors and Assigns
+
+{{assign}}
+
+ {{Xnum}}.3.Entire Agreement
+
+{{entire.base}}
+
+ {{Xnum}}.4.Notices
+
+{{notice}}
+
+ {{Xnum}}.5.Interpretation to Make Valid
+
+{{sever}}
+
+ {{Xnum}}.6.U.S. Export Laws
+
+{{usexport}}
+
+ {{Xnum}}.7.Waiver
+
+{{waive}}
+
+ {{Xnum}}.8.Counterparts
+
+{{counterparts}}
