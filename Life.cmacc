@@ -1,19 +1,23 @@
 // Parameters
 
+$ xnum = "xnum"
+
+$ life_Xnum = "life_Xnum"
+
+$ section_Xnum = "{{xnum}}.{{life_Xnum}}"
+
 $ conf_Duration = "DurationOfConfidentiality"
 
-$ reference_Conf_Except = "Conf_Except_Xref"
+$ reference_Confid_Except = "Conf_Except_Xref"
 
 $ confidentiality_End_YMD = "Confidentiality_End_YMD"
 
-$ ti = "Term of Confidentiality"
-
-$ alt1_Sec = "The Receiving Party's obligations with respect to all Confidential Information of the Disclosing Party will terminate only pursuant to {{conf_Except_Xref}}."
-
-$ alt2_Sec= "The Receiving Party's obligations with respect to all Confidential Information of the Disclosing Party will terminate on the earlier of {{confidentiality_End_YMD}} or when all such information has become subject to an exclusion from confidentiality pursuant to {{conf_Except_Xref}}."
-
-$ alt3_Sec = "The Receiving Party's obligations with respect to each element of Confidential Information of the Disclosing Party will terminate on the earlier of {{conf_Duration}} after the time such element was communicated by the Disclosing Party to the Receiving Party or when all such information has become subject to an exclusion from confidentiality pursuant to {{conf_Except_Xref}}."
+// Placeholder - option to be defined per deal - default is LifeDefined
+$ life_Option_Selected = [./LifeDefined.cmacc]
+$ life_Option_Selected.reference_Confid_Except = reference_Confid_Except
 
 // Content
 
-### Term of Confidentiality
+{{section_Xnum}}. Term of Confidentiality
+
+{{life_Option_Selected}}

@@ -1,52 +1,54 @@
 // Parameters
 
-$ amend = [github:///cmacclang/cmacc-form-generalclauses/dev/Amend.cmacc]
+$ xnum = "Xnum"
+
+$ amend = [yarn://cmacc-lib-generalclauses/Amend.cmacc]
 
 $ assign = [./Assign_Mutual.cmacc]
 
-$ counterparts = [github:///cmacclang/cmacc-form-generalclauses/dev/Counterparts.cmacc]
+$ counterparts = [yarn://cmacc-lib-generalclauses/Counterparts.cmacc]
 
 $ entire = [./Entire.cmacc]
 
 $ notice = [./Notice.cmacc]
 
-$ sever = [github:///cmacclang/cmacc-form-generalclauses/dev/Severability.cmacc]
+$ sever = [yarn://cmacc-lib-generalclauses/Severability.cmacc]
 
 $ usexport = [./USExport.cmacc]
 
-$ waive = [github:///cmacclang/cmacc-form-generalclauses/dev/NoWaiver.cmacc]
+$ waive = [yarn://cmacc-lib-generalclauses/NoWaiver.cmacc]
 
 
-### {{#section 'x'}}.Miscellaneous
+### {{xnum}}. Miscellaneous
 
- {{#section 'x.x'}}. Amendment
+ {{xnum}}.{{#section 'x'}}. Amendment
 
 {{amend}}
 
- {{#section 'x.x'}}. Successors and Assigns
+ {{xnum}}.{{#section 'x'}}. Successors and Assigns
 
 {{assign}}
 
- {{#section 'x.x'}}. Entire Agreement
+ {{xnum}}.{{#section 'x'}}. Entire Agreement
 
 {{entire.base}}
 
- {{#section 'x.x'}}. Notices
+ {{xnum}}.{{#section 'x'}}. Notices
 
 {{notice}}
 
- {{#section 'x.x'}}. Interpretation to Make Valid
+ {{xnum}}.{{#section 'x'}}. Interpretation to Make Valid
 
 {{sever}}
 
- {{#section 'x.x'}}. U.S. Export Laws
+ {{xnum}}.{{#section 'x'}}. U.S. Export Laws
 
 {{usexport}}
 
- {{#section 'x.x'}}. Waiver
+ {{xnum}}.{{#section 'x'}}. Waiver
 
 {{waive}}
 
- {{#section 'x.x'}}. Counterparts
+ {{xnum}}.{{#section 'x'}}. Counterparts
 
 {{counterparts}}

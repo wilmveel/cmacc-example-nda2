@@ -1,27 +1,31 @@
+// Parameters
+
+$ xnum = "Xnum"
+
 // Content
 
-### {{#section 'x'}}. Limits
+### {{xnum}}. Limits
 
- {{#section 'x.x'}}. Property of Disclosing Party
+ {{xnum}}.{{#section 'x'}}. Property of Disclosing Party
 
 Confidential Information is and shall remain the sole property of the Disclosing Party. 
 
- {{#section 'x.x'}}. No License
+ {{xnum}}.{{#section 'x'}}. No License
 
 The Receiving Party recognizes and agrees that nothing contained in this_Agreement will be construed as granting any property rights, by license or otherwise, to any Confidential Information of the Disclosing_Party, or to any invention or any patent, copyright, trademark, or other intellectual property right that has issued or that may issue, based on such Confidential Information.
 
- {{#section 'x.x'}}. No Other Use
+ {{xnum}}.{{#section 'x'}}. No Other Use
 
 The Receiving Party shall not make, have made, use, or sell for any purpose any service, product, or item using, incorporating, or derived from any Confidential Information of the Disclosing Party. 
 
- {{#section 'x.x'}}. No Agreement to Deal
+ {{xnum}}.{{#section 'x'}}. No Agreement to Deal
 
 Neither this Agreement nor the disclosure of any Confidential Information hereunder shall result in any obligation on the part of either Party to enter into any further agreement with the other, license any products or services to the other, or to require either Party to disclose any particular Confidential Information.
 
- {{#section 'x.x'}}. No Agency
+ {{xnum}}.{{#section 'x'}}. No Agency
 
 Nothing in this Agreement creates or shall be deemed to create any employment, joint venture, or agency between the Parties.
 
- {{#section 'x.x'}}. No Warranty Regarding Information
+ {{xnum}}.{{#section 'x'}}. No Warranty Regarding Information
  
 THE DISCLOSING PARTY IS PROVIDING CONFIDENTIAL INFORMATION ON AN "AS IS" BASIS FOR USE BY THE RECEIVING PARTY AT ITS OWN RISK. THE DISCLOSING PARTY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT OF THIRD PARTY RIGHTS, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE.

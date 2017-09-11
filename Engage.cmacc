@@ -1,26 +1,32 @@
 // Parameters
 
-$ conf_ExcludeAndExcept_Xref = "conf_ExcludeAndExcept_Xref"
+$ xnum = "Xnum"
+
+$ engage_Xnum = "engage_Xnum"
+
+$ xnum_Section = "{{xnum}}.{{engage_Xnum}}"
+
+$ reference_Confid_ExcludeAndExcept = "conf_ExcludeAndExcept_Xref"
 
 $ disclose = [./Disclose.cmacc]
-$ disclose.conf_ExcludeAndExcept_Xref = conf_ExcludeAndExcept_Xref
+$ disclose.reference_Confid_ExcludeAndExcept = reference_Confid_ExcludeAndExcept
 
 $ care = [./Care.cmacc]
 
 $ access = [./AccessScope_NTK_Signed.cmacc]
+$ 
+// Content
 
-// Document
+{{xnum_Section}}. Engagement
 
-Engagement
-
- {{#section 'x'}}. Disclosure and Use
+ {{xnum_Section}}.1. Disclosure and Use
  
  {{disclose}}
 
- {{#section 'x'}}. Care
+ {{xnum_Section}}.2. Care
  
  {{care}}
 
- {{#section 'x'}}. Access
+ {{xnum_Section}}.3. Access
  
  {{access}}

@@ -1,53 +1,95 @@
-// This is the part of the process where is shape the prose object into something closer to the deal. In this example a Mutual NDA
+// This is the part of the process where we start shaping the prose object into something closer to the deal. In this example a Mutual NDA
 
-// document title
+// Parameters
+// -----------
+
 $ doc_Title = "Mutual NDA"
+
+$ notice_Period_TimeSpan = "thirty (30) days"
 
 // Document sections
 
-$ intro = [github:///cmacclang/cmacc-lib-us/dev/_agt_Intro_2Parties.cmacc]
+$ intro = [yarn://cmacc-lib-us/_agt_Intro_2Parties.cmacc]
 $ intro.doc_Title = doc_Title
 
 $ conf_Xnum = "1"
 
 $ confid = [./Confid.cmacc]
-$ confid.Xnum = conf_Xnum
+$ confid.xnum = conf_Xnum
 
 $ limit_Xnum = "2"
 
 $ limit = [./Limit.cmacc]
-$ limit.Xnum = limit_Xnum
+$ limit.xnum = limit_Xnum
 
 $ rep_Xnum = "3"
 
 $ rep = [./3rdparty.cmacc]
-$ rep.Xnum = rep_Xnum
+$ rep.xnum = rep_Xnum
 
 $ term_Xnum = "4"
 
-$ notice_Period_TimeSpan = "thirty (30) days"
-
 $ term = [./TermSurvive.cmacc]
 $ term.notice_Period_TimeSpan = notice_Period_TimeSpan
-$ term.term_Xnum = term_Xnum
+$ term.xnum = term_Xnum
 
 $ dispute_Xnum = "5"
 
 $ dispute = [./Dispute.cmacc]
-$ dispute.Xnum = dispute_Xnum
+$ dispute.xnum = dispute_Xnum
 
 $ remedy_Xnum = "6"
 
 $ remedy = [./Remedy.cmacc]
-$ remedy.Xnum = remedy_Xnum
+$ remedy.xnum = remedy_Xnum
 
 $ misc_Xnum = "7"
 
 $ misc = [./MiscClauses.cmacc]
-$ misc.Xnum = misc_Xnum
+$ misc.xnum = misc_Xnum
 
-$ closing = [github:///cmacclang/cmacc-lib-us/dev/_agt_End_2Parties.cmacc]
+$ closing = [yarn://cmacc-lib-us/_agt_End_2Parties.cmacc]
 
+
+// Selecting options to make the prose object into a mutual NDA
+// ------------------------------------------------------------
+
+// Option Mutual NDA selected
+
+$ define_Options = [./DefineOptions.cmacc]
+
+$ disclose_Type = define_Options.mutual
+
+$ confidential_Information = confid.confidential_Information
+
+$ confidential_Information.disclose_Type = define_Options.mutual
+
+// Option WP_BP_Had selected
+
+$ except_Item_Option = [./Except_WP_BP_Had.cmacc]
+
+$ except_Item = confid.except.except_Item
+
+$ except_Item = except_Item_Option
+
+// Option for exceptions to disclosing Confidential Information
+
+$ except_Compeled = confid.except_Compeled
+
+$ except_Compeled.sec_Selected_Option = except_Compeled.sec_Option1
+
+// Option for life definition = life duration
+
+$ life_Option_Duration = [./LifeDefinedDuration.cmacc]
+
+$ life = confid.life
+
+$ life.life_Option_Selected = life_Option_Duration
+
+$ life.reference_Confid_Except = confid.reference_Confid_Except
+
+
+// Content
 
 {{intro}}
 

@@ -1,8 +1,15 @@
+---
+Definition: Specific Confidential Information Included
+---
+
+// Parameters
+
 $ subject = "subject"
 
 $ info_Types = "info_Types"
 
 $ info_Examples = "info_Examples"
 
+// Content
 
 {{info_Types}} related to {{subject}} the Disclosing Party, including without limitation the Disclosing Party's information concerning {{info_Examples}}

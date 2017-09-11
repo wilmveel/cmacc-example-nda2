@@ -1,14 +1,18 @@
-$ Xnum = "Xnum"
+// Parameters
 
-// section numbers
+$ conf_Duration = "3 years"
+
+$ confidentiality_End_YMD = "confidentiality_End_YMD"
+
+// Document section numbers
+
+$ xnum = "Xnum"
 
 $ def_Xnum = "1"
 
 $ engage_Xnum = "2"
 
 $ except_Xnum = "3"
-
-$ conf_ExcludeAndExcept_Xref = "Section {{Xnum}}.{{except_Xnum}}"
 
 $ except_Compeled_Xnum = "4"
 
@@ -18,52 +22,66 @@ $ decompile_Xnum = "6"
 
 $ life_Xnum = "7"
 
-$ conf_Infos = [./ConfidInfos.cmacc]
+$ reference_Confid_Except = "{{xnum}}.{{except_Xnum}}"
 
-$ define_Options = [./DefineOptions.cmacc]
+$ reference_Confid_ExcludeAndExcept = "Section {{xnum}}.{{except_Xnum}}"
 
-$ disclose_Type = "{{define_Options.mutual}}"
+// Definitions
 
-$ define_Confid = [./DefineConfid.cmacc]
-$ define_Confid.conf_Infos = conf_Infos
-$ define_Confid.disclose_Type = define_Options.mutual
+$ confidential_Information = [./ConfidentialInformation.cmacc]
+
+// External files
+
+$ deal_Confidential_Information = [./DealConfidentialInformation.cmacc]
+
+$ confidential_Information.specific_Confidential_Information = deal_Confidential_Information
+
+$ confidential_Information.xnum = xnum
+$ confidential_Information.def_Xnum = def_Xnum
 
 $ engage = [./Engage.cmacc]
-$ engage.conf_ExcludeAndExcept_Xref = conf_ExcludeAndExcept_Xref
+$ engage.xnum = xnum
 $ engage.engage_Xnum = engage_Xnum
-$ engage.Xnum = Xnum
-
-$ except_Item = [./Except_WP_BP_Had.cmacc]
+$ engage.reference_Confid_ExcludeAndExcept = reference_Confid_ExcludeAndExcept
 
 $ except = [./Except.cmacc]
-$ except.except_Item = except_Item
+$ except.xnum = xnum
+$ except.except_Xnum = except_Xnum
 
 $ except_Compeled = [./ExceptCompeled.cmacc]
+$ except_Compeled.xnum = xnum
+$ except_Compeled.except_Compeled_Xnum = except_Compeled_Xnum
 
 $ copying = [./Copying.cmacc]
+$ copying.xnum = xnum
+$ copying.copying_Xnum = copying_Xnum
 
 $ decompile = [./Decompile.cmacc]
+$ decompile.xnum = xnum
+$ decompile.decompile_Xnum = decompile_Xnum
 
-$ conf_Duration = "3 years"
+$ life = [./Life.cmacc]
 
-$ life = [./LifeDefinedDuration.cmacc]
-$ life.conf_Duration = conf_Duration
-$ life.conf_Except_Xref = except_Xnum
+$ life_Option_Selected = life.life_Option_Selected
 
+$ life.xnum = xnum
+$ life.life_Xnum = life_Xnum
+$ life.reference_Confid_Except = life_Option_Selected.reference_Confid_Except
 
-### {{Xnum}}.Confidentiality
+// Content
 
- {{Xnum}}.{{def_Xnum}}{{define_Confid}}
-
- {{Xnum}}.{{engage_Xnum}}{{engage}}
-
- {{Xnum}}.{{except_Xnum}}{{except}}
-
- {{Xnum}}.{{except_Compeled_Xnum}}{{except_Compeled.ti}} 
-  {{except_Compeled.sec_1}}
-
- {{Xnum}}.{{copying_Xnum}}{{copying}}
-
- {{Xnum}}.{{decompile_Xnum}}{{decompile}}
-
- {{Xnum}}.{{life_Xnum}}{{life}}
+### {{xnum}}. Confidentiality
+ 
+ {{confidential_Information}}
+ 
+ {{engage}}
+ 
+ {{except}}
+ 
+ {{except_Compeled}}
+ 
+ {{copying}}
+ 
+ {{decompile}}
+ 
+ {{life}}

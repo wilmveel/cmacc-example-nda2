@@ -1,17 +1,19 @@
 // Parameters
 
+$ xnum = "Xnum"
+
 $ law = [./Law.cmacc]
 
 $ forum = [./Court.cmacc]
 
 // Content
 
-### {{#section 'x'}}.Dispute Resolution
+### {{xnum}}. Dispute Resolution
 
-{{#section 'x.x'}}. Law
+{{xnum}}.{{#section 'x'}}. Law
 
 {{law}}
 
- {{#section 'x.x'}}. Forum
+ {{xnum}}.{{#section 'x'}}. Forum
  
  {{forum}}

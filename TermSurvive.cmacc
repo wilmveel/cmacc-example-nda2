@@ -1,21 +1,23 @@
 // Parameters
 
+$ xnum = "Xnum"
+
 $ life_End_YMD = "Life_End_YMD"
 
 $ notice_Period_TimeSpan = "NoticePeriod_TimeSpan"
 
 // Content
 
-### {{#section 'x'}}.Termination
+### {{xnum}}.Termination
 
- {{#section 'x.x'}}.Term
+ {{xnum}}.{{#section 'x'}}.Term
 
 This Agreement will terminate on {{life_End_YMD}}.
 
- {{#section 'x.x'}}.Termination
+ {{xnum}}.{{#section 'x'}}.Termination
 
 This Agreement may be terminated by either Party at any time upon {{notice_Period_TimeSpan}} written notice to the other Party.
 
- {{#section 'x.x'}}.Survival
+ {{xnum}}.{{#section 'x'}}.Survival
 
 The Receiving Party's obligations with respect to Confidential Information of the Disclosing_Party will survive termination of this Agreement.

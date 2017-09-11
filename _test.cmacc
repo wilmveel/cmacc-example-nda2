@@ -1,0 +1,48 @@
+// Parameters
+
+$ conf_Duration = "3 years"
+
+$ confidentiality_End_YMD = "confidentiality_End_YMD"
+
+// Document section numbers
+
+$ xnum = "Xnum"
+
+$ def_Xnum = "1"
+
+$ engage_Xnum = "2"
+
+$ except_Xnum = "3"
+
+$ except_Compeled_Xnum = "4"
+
+$ copying_Xnum = "5"
+
+$ decompile_Xnum = "6"
+
+$ life_Xnum = "7"
+
+$ reference_Confid_Except = "{{xnum}}.{{except_Xnum}}"
+
+$ reference_Confid_ExcludeAndExcept = "Section {{xnum}}.{{except_Xnum}}"
+
+// Definitions
+
+$ confidential_Information = [./ConfidentialInformation.cmacc]
+
+// External files
+
+$ deal_Confidential_Information = [./DealConfidentialInformation.cmacc]
+
+$ confidential_Information.specific_Confidential_Information = deal_Confidential_Information
+
+$ confidential_Information.xnum = xnum
+$ confidential_Information.def_Xnum = def_Xnum
+
+// Content
+
+### {{xnum}}. Confidentiality
+ 
+ {{confidential_Information}}
+ 
+

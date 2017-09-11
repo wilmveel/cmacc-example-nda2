@@ -1,9 +1,7 @@
 // Parameters
 
-$ reference_Conf_Except = "conf_Except_Xref"
+$ reference_Confid_Except = "conf_Except_Xref"
 
 // Content
 
-Term of Confidentiality
-
-The Receiving Party's obligations with respect to all Confidential Information of the Disclosing Party will terminate only pursuant to {{conf_Except_Xref}}.
+The Receiving Party's obligations with respect to all Confidential Information of the Disclosing Party will terminate only pursuant to {{reference_Confid_Except}}.

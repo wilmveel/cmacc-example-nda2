@@ -2,9 +2,15 @@
 
 $ except_Item = "except_Item"
 
+$ xnum = "Xnum"
+
+$ except_Xnum = "except_Xnum"
+
+$ section_Xnum = "{{xnum}}.{{except_Xnum}}"
+
 // Content
 
-Exclusions from Confidentiality
+{{section_Xnum}}. Exclusions from Confidentiality
 
 The Receiving Party will not have any obligations under this Agreement with respect to a specific portion of the Confidential Information if the Receiving Party can demonstrate with competent evidence that such portion of Confidential Information:
 
