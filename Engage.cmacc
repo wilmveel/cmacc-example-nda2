@@ -6,10 +6,10 @@ $ engage_Xnum = "engage_Xnum"
 
 $ xnum_Section = "{{xnum}}.{{engage_Xnum}}"
 
-$ reference_Confid_ExcludeAndExcept = "conf_ExcludeAndExcept_Xref"
+$ reference_Confid_Except = "conf_ExcludeAndExcept_Xref"
 
 $ disclose = [./Disclose.cmacc]
-$ disclose.reference_Confid_ExcludeAndExcept = reference_Confid_ExcludeAndExcept
+$ disclose.reference_Confid_Except = reference_Confid_Except
 
 $ care = [./Care.cmacc]
 

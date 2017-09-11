@@ -24,8 +24,6 @@ $ life_Xnum = "7"
 
 $ reference_Confid_Except = "{{xnum}}.{{except_Xnum}}"
 
-$ reference_Confid_ExcludeAndExcept = "Section {{xnum}}.{{except_Xnum}}"
-
 // Definitions
 
 $ confidential_Information = [./ConfidentialInformation.cmacc]
@@ -42,7 +40,7 @@ $ confidential_Information.def_Xnum = def_Xnum
 $ engage = [./Engage.cmacc]
 $ engage.xnum = xnum
 $ engage.engage_Xnum = engage_Xnum
-$ engage.reference_Confid_ExcludeAndExcept = reference_Confid_ExcludeAndExcept
+$ engage.reference_Confid_Except = reference_Confid_Except
 
 $ except = [./Except.cmacc]
 $ except.xnum = xnum
