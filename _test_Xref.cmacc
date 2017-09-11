@@ -38,27 +38,9 @@ $ confidential_Information.xnum = xnum
 $ confidential_Information.def_Xnum = def_Xnum
 
 $ engage = [./Engage.cmacc]
-
-
 $ engage.xnum = xnum
 $ engage.engage_Xnum = engage_Xnum
-$ engage.reference_Confid_Except = reference_Confid_Except
-
-$ except = [./Except.cmacc]
-$ except.xnum = xnum
-$ except.except_Xnum = except_Xnum
-
-$ except_Compeled = [./ExceptCompeled.cmacc]
-$ except_Compeled.xnum = xnum
-$ except_Compeled.except_Compeled_Xnum = except_Compeled_Xnum
-
-$ copying = [./Copying.cmacc]
-$ copying.xnum = xnum
-$ copying.copying_Xnum = copying_Xnum
-
-$ decompile = [./Decompile.cmacc]
-$ decompile.xnum = xnum
-$ decompile.decompile_Xnum = decompile_Xnum
+$ engage.disclose.reference_Confid_Except = reference_Confid_Except
 
 $ life = [./Life.cmacc]
 
@@ -66,24 +48,15 @@ $ life_Option_Selected = life.life_Option_Selected
 
 $ life.xnum = xnum
 $ life.life_Xnum = life_Xnum
-$ life.reference_Confid_Except = life_Option_Selected.reference_Confid_Except
+
+$ life_Option_Selected.reference_Confid_Except = reference_Confid_Except
 
 // Content
 
 ### {{xnum}}. Confidentiality
-
-{{reference_Confid_Except}}
  
  {{confidential_Information}}
  
  {{engage}}
- 
- {{except}}
- 
- {{except_Compeled}}
- 
- {{copying}}
- 
- {{decompile}}
  
  {{life}}

@@ -38,9 +38,11 @@ $ confidential_Information.xnum = xnum
 $ confidential_Information.def_Xnum = def_Xnum
 
 $ engage = [./Engage.cmacc]
+
+$ engage.disclose.reference_Confid_Except = reference_Confid_Except
+
 $ engage.xnum = xnum
 $ engage.engage_Xnum = engage_Xnum
-$ engage.reference_Confid_Except = reference_Confid_Except
 
 $ except = [./Except.cmacc]
 $ except.xnum = xnum
