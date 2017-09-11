@@ -1,6 +1,7 @@
+// Parameters
+
 $ scope = [./AccessOptions.cmacc]
 
-
-Access
+// Content - Access
 
 {{scope.limit}} {{scope.need_To_Know}} and {{scope.signed}}.

@@ -1,6 +1,8 @@
+// Parameters
+
 $ conf_Duration = "DurationOfConfidentiality"
 
-$ conf_Except_Xref = "Conf_Except_Xref"
+$ reference_Conf_Except = "Conf_Except_Xref"
 
 $ confidentiality_End_YMD = "Confidentiality_End_YMD"
 
@@ -12,5 +14,6 @@ $ alt2_Sec= "The Receiving Party's obligations with respect to all Confidential 
 
 $ alt3_Sec = "The Receiving Party's obligations with respect to each element of Confidential Information of the Disclosing Party will terminate on the earlier of {{conf_Duration}} after the time such element was communicated by the Disclosing Party to the Receiving Party or when all such information has become subject to an exclusion from confidentiality pursuant to {{conf_Except_Xref}}."
 
+// Content
 
 ### Term of Confidentiality

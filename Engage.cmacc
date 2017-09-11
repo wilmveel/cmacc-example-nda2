@@ -1,12 +1,4 @@
-$ Xnum = "Xnum"
-
-$ engage_Xnum = "engage_Xnum"
-
-$ disclose_Xnum = "1"
-
-$ care_Xnum = "2"
-
-$ access_Xnum = "3"
+// Parameters
 
 $ conf_ExcludeAndExcept_Xref = "conf_ExcludeAndExcept_Xref"
 
@@ -21,8 +13,14 @@ $ access = [./AccessScope_NTK_Signed.cmacc]
 
 Engagement
 
- {{Xnum}}.{{engage_Xnum}}.{{disclose_Xnum}} {{disclose}}
+ {{#section 'x'}}. Disclosure and Use
+ 
+ {{disclose}}
 
- {{Xnum}}.{{engage_Xnum}}.{{care_Xnum}} {{care}}
+ {{#section 'x'}}. Care
+ 
+ {{care}}
 
- {{Xnum}}.{{engage_Xnum}}.{{access_Xnum}} {{access}}
+ {{#section 'x'}}. Access
+ 
+ {{access}}

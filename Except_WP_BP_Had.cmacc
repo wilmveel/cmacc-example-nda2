@@ -1,8 +1,11 @@
+// Parameters
+
 $ except = [./ExceptOptions.cmacc]
 
+// Content
 
- 1.{{except.was_Public}};
+1.{{except.was_Public}};
 
- 2.{{except.becomes_Public}}; or
+2.{{except.becomes_Public}}; or
 
- 3.{{except.had}}.
+3.{{except.had}}.

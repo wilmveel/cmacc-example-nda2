@@ -1,10 +1,15 @@
+// Parameters
+
 $ assign = [./AssignPref.cmacc]
 
 $ merger = [./AssignMerger.cmacc]
 
 $ benefit = [./AssignBinding.cmacc]
 
+// Content
 
-{{assign.none}} 
-{{merger.no_Except}}{{merger.p1_Allowed}} 
+{{assign.none}}
+
+{{merger.no_Except}}{{merger.p1_Allowed}}
+
 {{benefit.mutual}}

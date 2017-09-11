@@ -1,4 +1,4 @@
-$ Xnum = "Xnum"
+// Parameters
 
 $ return1 = [./ReturnDestruct.cmacc]
 
@@ -6,10 +6,18 @@ $ leak = [./Leak.cmacc]
 
 $ injunction = [./Injunction.cmacc]
 
-### {{Xnum}}. Remedies
+// Content
 
- {{Xnum}}.1.{{return1}}
+### {{#section 'x'}}. Remedies
 
- {{Xnum}}.2.{{leak}}
+ {{#section 'x.x'}}. Return or Destruction
+ 
+ {{return1}}
 
- {{Xnum}}.3.{{injunction}}
+ {{#section 'x.x'}}. Notice of Leak
+ 
+ {{leak}}
+
+ {{#section 'x.x'}}. Injunctions
+ 
+ {{injunction}}

@@ -1,4 +1,4 @@
-$ Xnum = "Xnum"
+// Parameters
 
 $ amend = [github:///cmacclang/cmacc-form-generalclauses/dev/Amend.cmacc]
 
@@ -17,36 +17,36 @@ $ usexport = [./USExport.cmacc]
 $ waive = [github:///cmacclang/cmacc-form-generalclauses/dev/NoWaiver.cmacc]
 
 
-### {{Xnum}}.Miscellaneous
+### {{#section 'x'}}.Miscellaneous
 
- {{Xnum}}.1.Amendment
+ {{#section 'x.x'}}. Amendment
 
 {{amend}}
 
- {{Xnum}}.2.Successors and Assigns
+ {{#section 'x.x'}}. Successors and Assigns
 
 {{assign}}
 
- {{Xnum}}.3.Entire Agreement
+ {{#section 'x.x'}}. Entire Agreement
 
 {{entire.base}}
 
- {{Xnum}}.4.Notices
+ {{#section 'x.x'}}. Notices
 
 {{notice}}
 
- {{Xnum}}.5.Interpretation to Make Valid
+ {{#section 'x.x'}}. Interpretation to Make Valid
 
 {{sever}}
 
- {{Xnum}}.6.U.S. Export Laws
+ {{#section 'x.x'}}. U.S. Export Laws
 
 {{usexport}}
 
- {{Xnum}}.7.Waiver
+ {{#section 'x.x'}}. Waiver
 
 {{waive}}
 
- {{Xnum}}.8.Counterparts
+ {{#section 'x.x'}}. Counterparts
 
 {{counterparts}}

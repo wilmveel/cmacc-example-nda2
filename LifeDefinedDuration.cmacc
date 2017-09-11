@@ -1,7 +1,10 @@
-$ conf_Duration = "DurationOfConfidentiality";
+// Parameters
+
+$ conf_Duration = "DurationOfConfidentiality"
 
 $ conf_Except_Xref = "conf_except_Xref"
 
+// Content
 
 Term of Confidentiality
 

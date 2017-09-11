@@ -1,3 +1,5 @@
+// List of options
+
 $ mutual = "by a Party (the Disclosing Party) to the other Party (the Receiving_Party)"
 
 $ p1_P2 = "by the {{P1_Handle}} (also referred to as the Disclosing Party) to the {{P2_Handle}} (also referred to as the Receiving Party)"

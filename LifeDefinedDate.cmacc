@@ -1,7 +1,10 @@
+// Parameters
+
 $ confidentiality_End_YMD = "Confidentiality_End_YMD"
 
 $ conf_Except_Xref = "Conf_Except_Xref"
 
+// Content
 
 ### Term of Confidentiality
 

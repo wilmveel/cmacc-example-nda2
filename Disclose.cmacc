@@ -1,3 +1,5 @@
+// Parameters
+
 $ conf_ExcludeAndExcept_Xref = "Conf_ExcludeAndExcept_Xref"
 
 $ sec_0 = "Subject to {{conf_ExcludeAndExcept_Xref}}, the Receiving Party agrees that at all times and notwithstanding any termination or expiration of this Agreement that:"
@@ -6,10 +8,10 @@ $ sec_1 = "the Receiving Party will hold in strict confidence and not disclose t
 
 $ sec_2 = "the Receiving Party will use the Confidential Information of the Disclosing_Party for no purpose other than the Permitted Use"
 
-
-Disclosure and Use
+// Content - Disclosure and Use
 
 {{sec_0}}
 
- 1.{{sec_1}} and;
- 2.{{sec_2}}
+1. {{sec_1}} and;
+ 
+2. {{sec_2}}
