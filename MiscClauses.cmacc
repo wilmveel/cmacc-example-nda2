@@ -2,53 +2,58 @@
 
 $ xnum = "Xnum"
 
+$ xnum_Amend = "{{xnum}}.1"
 $ amend = [yarn://cmacc-lib-generalclauses/Amend.cmacc]
+$ amend.xnum = xnum_Amend
+$ amend.ti = "Amendment"
 
+$ xnum_Assign = "{{xnum}}.2"
 $ assign = [./Assign_Mutual.cmacc]
+$ assign.xnum = xnum_Assign
 
-$ counterparts = [yarn://cmacc-lib-generalclauses/Counterparts.cmacc]
-
+$ xnum_Entire = "{{xnum}}.3"
 $ entire = [./Entire.cmacc]
+$ entire.option_Selected = entire.base
 
+$ xnum_Notice = "{{xnum}}.4"
 $ notice = [./Notice.cmacc]
+$ notice.xnum = xnum_Notice
 
+$ xnum_Sever = "{{xnum}}.5"
 $ sever = [yarn://cmacc-lib-generalclauses/Severability.cmacc]
+$ sever.xnum = xnum_Sever
+$ sever.ti = "Interpretation to Make Valid"
 
+$ xnum_US_Export = "{{xnum}}.6"
 $ usexport = [./USExport.cmacc]
+$ usexport.xnum = xnum_US_Export
 
+$ xnum_Waive = "{{xnum}}.7"
 $ waive = [yarn://cmacc-lib-generalclauses/NoWaiver.cmacc]
+$ waive.xnum = xnum_Waive
+$ waive.ti = "Waiver"
 
+$ xnum_Counterparts = "{{xnum}}.8"
+$ counterparts = [yarn://cmacc-lib-generalclauses/Counterparts.cmacc]
+$ counterparts.xnum = xnum_Counterparts
+$ counterparts.ti = "Counterparts"
+
+// Content
 
 ### {{xnum}}. Miscellaneous
 
- {{xnum}}.{{#section 'x'}}. Amendment
-
 {{amend}}
-
- {{xnum}}.{{#section 'x'}}. Successors and Assigns
 
 {{assign}}
 
- {{xnum}}.{{#section 'x'}}. Entire Agreement
-
-{{entire.base}}
-
- {{xnum}}.{{#section 'x'}}. Notices
+{{entire}}
 
 {{notice}}
 
- {{xnum}}.{{#section 'x'}}. Interpretation to Make Valid
-
 {{sever}}
-
- {{xnum}}.{{#section 'x'}}. U.S. Export Laws
 
 {{usexport}}
 
- {{xnum}}.{{#section 'x'}}. Waiver
-
 {{waive}}
-
- {{xnum}}.{{#section 'x'}}. Counterparts
 
 {{counterparts}}

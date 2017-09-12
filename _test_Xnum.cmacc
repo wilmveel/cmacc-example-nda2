@@ -1,0 +1,17 @@
+// Parameters
+
+$ xnum = "Xnum"
+
+// if I enter xnum_Amend as 1.1 it works, but if I use a parameter it does not
+// xnum_Amend works if I use it as is but does not work if I use it as a parameter that I try to pass
+
+$ xnum_Amend = "{{xnum}}.1"
+
+$ amend = [yarn://cmacc-lib-generalclauses/Amend.cmacc]
+$ amend.xnum = xnum_Amend
+$ amend.ti = "Amendment"
+
+// Content
+
+{{amend}}
+
