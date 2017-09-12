@@ -10,10 +10,10 @@ $ forum = [./Court.cmacc]
 
 ### {{xnum}}. Dispute Resolution
 
-{{xnum}}.{{#section 'x'}}. Law
+{{xnum}}.1. Law
 
 {{law}}
 
- {{xnum}}.{{#section 'x'}}. Forum
+ {{xnum}}.2. Forum
  
  {{forum}}
