@@ -80,13 +80,13 @@ $ except_Compeled.sec_Selected_Option = except_Compeled.sec_Option1
 
 // Option for life definition = life duration
 
-$ life_Option_Duration = [./LifeDefinedDuration.cmacc]
+$ life_Option = [./LifeDefinedDuration.cmacc]
 
-$ life = confid.life
+$ life_Option_Selected = confid.life.life_Option_Selected
 
-$ life.life_Option_Selected = life_Option_Duration
+$ life_Option_Selected = life_Option
 
-$ life.reference_Confid_Except = confid.reference_Confid_Except
+$ life_Option_Selected.reference_Confid_Except = confid.reference_Confid_Except
 
 
 // Content

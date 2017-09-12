@@ -62,11 +62,12 @@ $ decompile.decompile_Xnum = decompile_Xnum
 
 $ life = [./Life.cmacc]
 
-$ life_Option_Selected = life.life_Option_Selected
-
 $ life.xnum = xnum
 $ life.life_Xnum = life_Xnum
-$ life.reference_Confid_Except = life_Option_Selected.reference_Confid_Except
+
+$ life_Option_Selected = life.life_Option_Selected
+
+$ life_Option_Selected.reference_Confid_Except = reference_Confid_Except
 
 // Content
 
