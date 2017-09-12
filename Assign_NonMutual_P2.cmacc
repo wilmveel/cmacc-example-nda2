@@ -1,10 +1,21 @@
+// Parameters
+
+$ xnum = "Xnum"
+
+$ ti = "Successors and Assigns"
+
 $ assign = [./AssignPref.cmacc]
 
 $ merger = [./AssignMerger.cmacc]
 
 $ benefit = [./AssignBinding.cmacc]
 
+// Content
+
+{{xnum}}. {{ti}}
 
 {{assign.not_P1}}
+
 {{merger.no_Except}}
+
 {{benefit.p1_Binding}}

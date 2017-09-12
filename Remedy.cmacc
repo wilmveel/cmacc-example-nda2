@@ -12,14 +12,14 @@ $ injunction = [./Injunction.cmacc]
 
 ### {{xnum}}. Remedies
 
- {{xnum}}.{{#section 'x'}}. Return or Destruction
+ {{xnum}}.1. Return or Destruction
  
  {{return1}}
 
- {{xnum}}.{{#section 'x'}}. Notice of Leak
+ {{xnum}}.2. Notice of Leak
  
  {{leak}}
 
- {{xnum}}.{{#section 'x'}}. Injunctions
+ {{xnum}}.3. Injunctions
  
  {{injunction}}
