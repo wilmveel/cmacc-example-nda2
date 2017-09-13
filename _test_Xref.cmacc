@@ -26,11 +26,11 @@ $ reference_Confid_Except = "{{xnum}}.{{except_Xnum}}"
 
 // Definitions
 
-$ confidential_Information = [./ConfidentialInformation.cmacc]
+$ confidential_Information = [yarn://cmacc-lib-nda/ConfidentialInformation.cmacc]
 
 // External files
 
-$ deal_Confidential_Information = [./DealConfidentialInformation.cmacc]
+$ deal_Confidential_Information = [yarn://cmacc-lib-nda/DealConfidentialInformation.cmacc]
 
 $ confidential_Information.specific_Confidential_Information = deal_Confidential_Information
 
