@@ -5,8 +5,8 @@
 $ xnum = "Xnum"
 
 $ xnum_Entire = "{{xnum}}.3"
-$ entire = [yarn://cmacc-lib-nda/Entire.cmacc]
-$ entire.option_Selected = entire.base
+$ entire = [./Entire.cmacc]
+$ entire.option_Selected = entire.further
 
 // Content
 
