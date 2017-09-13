@@ -1,3 +1,7 @@
+// Parameters
+
+$ confidential_Information = [./ConfidentialInformation.cmacc]
+
 // Care
 
-The Receiving Party will protect Confidential Information with a degree of care that is at least the same as the Receiving Party uses to protect its own confidential information, and in any event at least a reasonable degree of care.
+The Receiving Party will protect {{#definition confidential_Information}} with a degree of care that is at least the same as the Receiving Party uses to protect its own confidential information, and in any event at least a reasonable degree of care.

@@ -10,10 +10,12 @@ $ section_Xnum = "{{xnum}}.{{except_Xnum}}"
 
 $ agreement = [yarn://cmacc-lib-definitions/US/Agreement.cmacc]
 
+$ confidential_Information = [./ConfidentialInformation.cmacc]
+
 // Content
 
 {{section_Xnum}}. Exclusions from Confidentiality
 
-The Receiving Party will not have any obligations under this {{#definition agreement}} with respect to a specific portion of the Confidential Information if the Receiving Party can demonstrate with competent evidence that such portion of Confidential Information:
+The Receiving Party will not have any obligations under this {{#definition agreement}} with respect to a specific portion of the {{#definition confidential_Information}} if the Receiving Party can demonstrate with competent evidence that such portion of {{#definition confidential_Information}}:
 
 {{except_Item}}

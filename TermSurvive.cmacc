@@ -8,6 +8,8 @@ $ notice_Period_TimeSpan = "NoticePeriod_TimeSpan"
 
 $ agreement = [yarn://cmacc-lib-definitions/US/Agreement.cmacc]
 
+$ confidential_Information = [./ConfidentialInformation.cmacc]
+
 // Content
 
 ### {{xnum}}.Termination
@@ -22,4 +24,4 @@ This {{#definition agreement}} may be terminated by either Party at any time upo
 
  {{xnum}}.3.Survival
 
-The Receiving Party's obligations with respect to Confidential Information of the Disclosing_Party will survive termination of this {{#definition agreement}}.
+The Receiving Party's obligations with respect to {{#definition confidential_Information}} of the Disclosing Party will survive termination of this {{#definition agreement}}.

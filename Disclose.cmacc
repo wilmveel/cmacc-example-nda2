@@ -2,13 +2,15 @@
 
 $ agreement = [yarn://cmacc-lib-definitions/US/Agreement.cmacc]
 
+$ confidential_Information = [./ConfidentialInformation.cmacc]
+
 $ reference_Confid_Except = "Conf_ExcludeAndExcept_Xref"
 
 $ sec_0 = "Subject to Section {{reference_Confid_Except}}, the Receiving Party agrees that at all times and notwithstanding any termination or expiration of this {{#definition agreement}} that:"
 
-$ sec_1 = "the Receiving Party will hold in strict confidence and not disclose to any third party any Confidential Information of the Disclosing Party, except as approved in writing by the Disclosing Party"
+$ sec_1 = "the Receiving Party will hold in strict confidence and not disclose to any third party any {{#definition confidential_Information}} of the Disclosing Party, except as approved in writing by the Disclosing Party"
 
-$ sec_2 = "the Receiving Party will use the Confidential Information of the Disclosing_Party for no purpose other than the Permitted Use"
+$ sec_2 = "the Receiving Party will use the {{#definition confidential_Information}} of the Disclosing Party for no purpose other than the Permitted Use"
 
 // Content - Disclosure and Use
 

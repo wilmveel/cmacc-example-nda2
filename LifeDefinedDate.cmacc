@@ -4,6 +4,8 @@ $ confidentiality_End_YMD = "Confidentiality_End_YMD"
 
 $ reference_Confid_Except = "Conf_Except_Xref"
 
+$ confidential_Information = [./ConfidentialInformation.cmacc]
+
 // Content
 
-The Receiving Party's obligations with respect to all Confidential Informationof the Disclosing_Party will terminate on the earlier of {{confidentiality_End_YMD}} or when all such information has become subject to an exclusion from confidentiality pursuant to {{reference_Confid_Except}}.
+The Receiving Party's obligations with respect to all {{#definition confidential_Information}} of the Disclosing_Party will terminate on the earlier of {{confidentiality_End_YMD}} or when all such information has become subject to an exclusion from confidentiality pursuant to {{reference_Confid_Except}}.

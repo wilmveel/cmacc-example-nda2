@@ -1,0 +1,29 @@
+// This is where is enter actual data deal points like the name of the parties, prices, etc...
+
+// Parameters
+// ----------
+
+// Party 1 info ----------
+
+$ p1 = [yarn://cmacc-example-id/GerrysGrapesLLC.cmacc]
+
+// Party 2 info ----------
+
+$ p2 = [yarn://cmacc-example-id/RobertaRobinson.cmacc]
+
+// effective date of agreement
+$ effective_Date = "2017-09-12"
+
+// Data binding
+
+$ deal = [./NDA_Mutual.cmacc]
+
+$ intro = deal.intro
+
+$ intro.effective_Date = effective_Date
+$ intro.party1 = p1
+$ intro.party2 = p2
+
+// Content
+
+{{intro}}
