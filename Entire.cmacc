@@ -6,7 +6,7 @@ $ ti = "Entire Agreement"
 
 $ option_Selected = "...please select a text option..."
 
-$ agreement = [yarn://cmacc-lib-definitions/Agreement.cmacc]
+$ agreement = [yarn://cmacc-lib-definitions/US/Agreement.cmacc]
 
 // List of options
 
