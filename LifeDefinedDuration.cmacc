@@ -1,8 +1,0 @@
-$ conf_Duration = "DurationOfConfidentiality";
-
-$ conf_Except_Xref = "conf_except_Xref"
-
-
-Term of Confidentiality
-
-The Receiving Party's obligations with respect to each element of Confidential Information of the Disclosing Party will terminate on the earlier of {{conf_Duration}} after the time such element was communicated by the Disclosing Party to the Receiving Party or when all such information has become subject to an exclusion from confidentiality pursuant to section {{conf_Except_Xref}}.

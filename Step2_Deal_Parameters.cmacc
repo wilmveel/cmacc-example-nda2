@@ -1,0 +1,60 @@
+// This is where is enter actual data deal points like the name of the parties, prices, etc...
+
+// Parameters
+// ----------
+
+// Party 1 info ----------
+
+$ p1 = [yarn://cmacc-example-id/GerrysGrapesLLC.cmacc]
+$ p1.entity_a = p1.entity_a_EN
+$ p1.adr_Type = p1.adr_Type_EN
+
+// Party 2 info ----------
+
+$ p2 = [yarn://cmacc-lib-us/_entity_Individual.cmacc]
+$ roberta_Robinson = [yarn://cmacc-example-id/RobertaRobinson.cmacc]
+$ p2.individual = roberta_Robinson
+$ p2.adr = roberta_Robinson.adr
+$ p2.sign_Rep = roberta_Robinson
+
+// effective date of agreement
+$ effective_Date = "2017-09-12"
+
+// termination date
+$ life_End_YMD = "2018-12-31"
+
+// Description of information disclosed
+
+$ subject = "the current, future, and proposed products and services of"
+
+$ info_Types = "proprietary and confidential information, ideas, techniques, sketches, drawings, works of authorship, models, inventions, know-how, processes, apparatuses, equipment, algorithms, software programs, software source documents, and formulae"
+
+$ info_Examples = "research, experimental work, development, design details and specifications, engineering, financial information, procurement requirements, purchasing, manufacturing, customer lists, investors, employees, business and contractual relationships, business forecasts, sales and merchandising, and marketing plans"
+
+// Data binding
+
+$ deal = [./Step1_Mutual_NDA.cmacc]
+
+$ intro = deal.intro
+
+$ intro.effective_Date = effective_Date
+$ intro.party1 = p1
+$ intro.party2 = p2
+
+$ deal_Confidential_Information = deal.confid.deal_Confidential_Information
+
+$ deal_Confidential_Information.subject = subject
+$ deal_Confidential_Information.info_Types = info_Types
+$ deal_Confidential_Information.info_Examples = info_Examples
+
+$ term = deal.term
+
+$ term.life_End_YMD = life_End_YMD
+
+$ closing = deal.closing
+$ closing.party1 = p1
+$ closing.party2 = p2
+
+// Content
+
+{{deal}}

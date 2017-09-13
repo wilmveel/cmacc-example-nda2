@@ -1,0 +1,30 @@
+// This is where is enter actual data deal points like the name of the parties, prices, etc...
+
+// Parameters
+// ----------
+
+$ p1_Signature = "xGerry"
+
+$ p1_Sign_YMD = "2014-08-13:12:03"
+
+$ p2_Signature = "xRoberta"
+
+$ p2_Sign_YMD = "2014-08-27:14:32"
+
+// Data binding
+
+$ finalized_Deal = [./Step2_Deal_Parameters.cmacc]
+
+$ closing = finalized_Deal.deal.closing
+
+$ closing.sign_Party1_Date = p1_Sign_YMD
+$ closing.sign_Party1_Place = finalized_Deal.p1.adr.street.city.name
+$ closing.sign_Party1_Signature = p1_Signature
+
+$ closing.sign_Party2_Date = p2_Sign_YMD
+$ closing.sign_Party2_Place = finalized_Deal.p2.adr.street.city.name
+$ closing.sign_Party2_Signature = p2_Signature
+
+// Content
+
+{{finalized_Deal}}
