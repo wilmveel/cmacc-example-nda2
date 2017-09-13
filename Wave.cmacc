@@ -1,9 +1,0 @@
-// Parameters
-
-$ agreement = [yarn://cmacc-lib-definitions/US/Agreement.cmacc]
-
-// Content
-
-1.Any waiver or failure to enforce any provision of this {{#definition agreement}} by a Party on one occasion will not be deemed a waiver of any other provision or of such provision on any other occasion.
-
-2.A waiver of a breach of any provision of this {{#definition agreement}} by a Party shall not operate or be construed as a waiver of any other or subsequent breach.

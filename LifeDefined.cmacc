@@ -1,9 +1,0 @@
-// Parameters
-
-$ reference_Confid_Except = "conf_Except_Xref"
-
-$ confidential_Information = [./ConfidentialInformation.cmacc]
-
-// Content
-
-The Receiving Party's obligations with respect to all {{#definition confidential_Information}} of the Disclosing Party will terminate only pursuant to {{reference_Confid_Except}}.

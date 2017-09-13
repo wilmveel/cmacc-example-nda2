@@ -1,7 +1,0 @@
-// Parameters
-
-$ confidential_Information = [./ConfidentialInformation.cmacc]
-
-// Notice of Leak
-
-The Receiving Party will immediately notify the Disclosing Party upon discovery of any loss or unauthorized disclosure of the {{#definition confidential_Information}}.

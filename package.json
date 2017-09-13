@@ -9,7 +9,8 @@
   "flat": true,
   "dependencies": {
     "cmacc-example-id": "2.0.6",
-    "cmacc-lib-generalclauses": "cmacclang/cmacc-lib-generalclauses#dev-marc",
+    "cmacc-lib-generalclauses": "2.0.2",
+    "cmacc-lib-nda": "2.1.1",
     "cmacc-lib-us": "2.0.9"
   },
   "devDependencies": {
