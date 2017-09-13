@@ -12,25 +12,25 @@ $ conf_Xnum = "1"
 
 $ limit_Xnum = "2"
 
-$ limit = [./Limit.cmacc]
+$ limit = [yarn://cmacc-lib-nda/Limit.cmacc]
 $ limit.Xnum = limit_Xnum
 
 $ rep_Xnum = "3"
 
-$ rep = [./3rdparty.cmacc]
+$ rep = [yarn://cmacc-lib-nda/3rdparty.cmacc]
 $ rep.Xnum = rep_Xnum
 
 $ term_Xnum = "4"
 
 $ notice_Period_TimeSpan = "thirty (30) days"
 
-$ term = [./TermSurvive.cmacc]
+$ term = [yarn://cmacc-lib-nda/TermSurvive.cmacc]
 $ term.notice_Period_TimeSpan = notice_Period_TimeSpan
 $ term.term_Xnum = term_Xnum
 
 $ misc_Xnum = "7"
 
-$ misc = [./MiscClauses.cmacc]
+$ misc = [yarn://cmacc-lib-nda/MiscClauses.cmacc]
 $ misc.Xnum = misc_Xnum
 
 

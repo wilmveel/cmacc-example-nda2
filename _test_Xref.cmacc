@@ -37,12 +37,12 @@ $ confidential_Information.specific_Confidential_Information = deal_Confidential
 $ confidential_Information.xnum = xnum
 $ confidential_Information.def_Xnum = def_Xnum
 
-$ engage = [./Engage.cmacc]
+$ engage = [yarn://cmacc-lib-nda/Engage.cmacc]
 $ engage.xnum = xnum
 $ engage.engage_Xnum = engage_Xnum
 $ engage.disclose.reference_Confid_Except = reference_Confid_Except
 
-$ life = [./Life.cmacc]
+$ life = [yarn://cmacc-lib-nda/Life.cmacc]
 
 $ life_Option_Selected = life.life_Option_Selected
 

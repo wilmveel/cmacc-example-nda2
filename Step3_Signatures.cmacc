@@ -3,11 +3,11 @@
 // Parameters
 // ----------
 
-$ p1_Signature = "xParty1"
+$ p1_Signature = "xGerry"
 
 $ p1_Sign_YMD = "2014-08-13:12:03"
 
-$ p2_Signature = "xParty2"
+$ p2_Signature = "xRoberta"
 
 $ p2_Sign_YMD = "2014-08-27:14:32"
 
