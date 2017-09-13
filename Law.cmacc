@@ -2,6 +2,8 @@
 
 $ Law_State = "Law_State"
 
+$ agreement = [yarn://cmacc-lib-definitions/US/Agreement.cmacc]
+
 // Content - Law
 
-This Agreement and any action related thereto will be governed, controlled, interpreted, and defined by and under the laws of the {{Law_State}}, without giving effect to any conflicts of laws principles that require the application of the law of a different state.
+This {{#definition agreement}} and any action related thereto will be governed, controlled, interpreted, and defined by and under the laws of the {{Law_State}}, without giving effect to any conflicts of laws principles that require the application of the law of a different state.

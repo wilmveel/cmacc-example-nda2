@@ -4,8 +4,10 @@ $ xnum = "Xnum"
 
 $ ti = "U.S. Export Laws"
 
+$ agreement = [yarn://cmacc-lib-definitions/US/Agreement.cmacc]
+
 // Content
 
 {{xnum}}. {{ti}}
 
-The Receiving Party will not export, directly or indirectly, any U.S. technical data acquired pursuant to this Agreement, or any products utilizing such data, in violation of the United States export laws or regulations.
+The Receiving Party will not export, directly or indirectly, any U.S. technical data acquired pursuant to this {{#definition agreement}}, or any products utilizing such data, in violation of the United States export laws or regulations.
