@@ -6,10 +6,16 @@
 // Party 1 info ----------
 
 $ p1 = [yarn://cmacc-example-id/GerrysGrapesLLC.cmacc]
+$ p1.entity_a = p1.entity_a_EN
+$ p1.adr_Type = p1.adr_Type_EN
 
 // Party 2 info ----------
 
-$ p2 = [yarn://cmacc-example-id/RobertaRobinson.cmacc]
+$ p2 = [yarn://cmacc-lib-us/_entity_Individual.cmacc]
+$ roberta_Robinson = [yarn://cmacc-example-id/RobertaRobinson.cmacc]
+$ p2.individual = roberta_Robinson
+$ p2.adr = roberta_Robinson.adr
+$ p2.sign_Rep = roberta_Robinson
 
 // effective date of agreement
 $ effective_Date = "2017-09-12"
@@ -27,7 +33,7 @@ $ info_Examples = "research, experimental work, development, design details and 
 
 // Data binding
 
-$ deal = [./NDA_Mutual.cmacc]
+$ deal = [./Step1_Mutual_NDA.cmacc]
 
 $ intro = deal.intro
 
@@ -44,6 +50,10 @@ $ deal_Confidential_Information.info_Examples = info_Examples
 $ term = deal.term
 
 $ term.life_End_YMD = life_End_YMD
+
+$ closing = deal.closing
+$ closing.party1 = p1
+$ closing.party2 = p2
 
 // Content
 
