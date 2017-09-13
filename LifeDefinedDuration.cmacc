@@ -4,6 +4,8 @@ $ conf_Duration = "DurationOfConfidentiality"
 
 $ reference_Confid_Except = "conf_except_Xref"
 
+$ confidential_Information = [./ConfidentialInformation.cmacc]
+
 // Content
 
-The Receiving Party's obligations with respect to each element of Confidential Information of the Disclosing Party will terminate on the earlier of {{conf_Duration}} after the time such element was communicated by the Disclosing Party to the Receiving Party or when all such information has become subject to an exclusion from confidentiality pursuant to section {{reference_Confid_Except}}.
+The Receiving Party's obligations with respect to each element of {{#definition confidential_Information}} of the Disclosing Party will terminate on the earlier of {{conf_Duration}} after the time such element was communicated by the Disclosing Party to the Receiving Party or when all such information has become subject to an exclusion from confidentiality pursuant to section {{reference_Confid_Except}}.

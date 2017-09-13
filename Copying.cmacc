@@ -6,8 +6,15 @@ $ copying_Xnum = "copying_Xnum"
 
 $ section_Xnum = "{{xnum}}.{{copying_Xnum}}"
 
+$ agreement = [yarn://cmacc-lib-definitions/US/Agreement.cmacc]
+
+$ confidential_Information = [./ConfidentialInformation.cmacc]
+
+{{#definition confidential_Information}}
+
+
 // Content
 
 {{section_Xnum}}. Copying
 
-The Receiving Party will not reproduce the Confidential Information of the Disclosing_Party in any form except as required to accomplish the intent of this Agreement. Any reproduction by a Receiving Party of any Confidential Information of the Disclosing Party will remain the property of the Disclosing Party and will contain any and all confidential or proprietary notices or legends that appear on the original, unless otherwise authorized in writing by the Disclosing Party.
+The Receiving Party will not reproduce the {{#definition confidential_Information}} of the Disclosing_Party in any form except as required to accomplish the intent of this {{#definition agreement}}. Any reproduction by a Receiving Party of any {{#definition confidential_Information}} of the Disclosing Party will remain the property of the Disclosing Party and will contain any and all confidential or proprietary notices or legends that appear on the original, unless otherwise authorized in writing by the Disclosing Party.

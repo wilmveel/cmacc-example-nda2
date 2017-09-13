@@ -4,8 +4,10 @@ $ xnum = "Xnum"
 
 $ ti = "Counterparts"
 
-{{xnum}}. {{ti}}
+$ agreement = [yarn://cmacc-lib-definitions/US/Agreement.cmacc]
 
 // Content
 
-This Agreement may be executed in one or more counterparts, each of which shall be deemed an original and all of which shall be taken together and deemed to be one instrument.
+{{xnum}}. {{ti}}
+
+This {{#definition agreement}} may be executed in one or more counterparts, each of which shall be deemed an original and all of which shall be taken together and deemed to be one instrument.

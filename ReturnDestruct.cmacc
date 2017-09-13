@@ -1,3 +1,9 @@
+// Parameters
+
+$ agreement = [yarn://cmacc-lib-definitions/US/Agreement.cmacc]
+
+$ confidential_Information = [./ConfidentialInformation.cmacc]
+
 // Return or Destruction
 
-Upon termination or expiration of this Agreement, or upon written request of either party, the Receiving Party will promptly return to the Disclosing Party or destroy all documents and other tangible materials representing Confidential Information and all copies thereof.
+Upon termination or expiration of this {{#definition agreement}}, or upon written request of either party, the Receiving Party will promptly return to the Disclosing Party or destroy all documents and other tangible materials representing {{#definition confidential_Information}} and all copies thereof.

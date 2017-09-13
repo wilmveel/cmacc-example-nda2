@@ -1,1 +1,7 @@
-No modification of or amendment to this Agreement will be effective unless in writing and signed by the Party to be charged.
+// Parameters
+
+$ agreement = [yarn://cmacc-lib-definitions/US/Agreement.cmacc]
+
+// Content
+
+No modification of or amendment to this {{#definition agreement}} will be effective unless in writing and signed by the Party to be charged.
