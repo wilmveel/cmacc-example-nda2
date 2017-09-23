@@ -8,17 +8,15 @@ $ doc_Title = "Mutual NDA"
 
 $ conf_Xnum = "1"
 
-
-
 $ limit_Xnum = "2"
 
 $ limit = [yarn://cmacc-lib-nda/Limit.cmacc]
-$ limit.Xnum = limit_Xnum
+$ limit.xnum = limit_Xnum
 
 $ rep_Xnum = "3"
 
 $ rep = [yarn://cmacc-lib-nda/3rdparty.cmacc]
-$ rep.Xnum = rep_Xnum
+$ rep.xnum = rep_Xnum
 
 $ term_Xnum = "4"
 
@@ -26,18 +24,13 @@ $ notice_Period_TimeSpan = "thirty (30) days"
 
 $ term = [yarn://cmacc-lib-nda/TermSurvive.cmacc]
 $ term.notice_Period_TimeSpan = notice_Period_TimeSpan
-$ term.term_Xnum = term_Xnum
+$ term.xnum = term_Xnum
 
 $ misc_Xnum = "7"
 
 $ misc = [yarn://cmacc-lib-nda/MiscClauses.cmacc]
-$ misc.Xnum = misc_Xnum
+$ misc.xnum = misc_Xnum
 
-
-
-{{intro}}
-
-{{confid}}
 
 {{limit}}
 
@@ -45,10 +38,5 @@ $ misc.Xnum = misc_Xnum
 
 {{term}}
 
-{{dispute}}
-
-{{remedy}}
-
 {{misc}}
 
-{{closing}}
