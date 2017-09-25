@@ -22,9 +22,9 @@ $ confid.xnum = conf_Xnum
 
 $ except_Option_Selected = [yarn://cmacc-lib-nda/Except_WP_BP_Had_Finds.cmacc]
 
-$ except_Item = confid.except.except_List
+$ except = confid.except
 
-$ except_Item = except_Option_Selected
+$ except.except_Item = except_Option_Selected
 
 
 // Content
