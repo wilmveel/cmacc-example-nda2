@@ -70,7 +70,7 @@ $ except_List_Option = [yarn://cmacc-lib-nda/Except_WP_BP_Had.cmacc]
 
 $ except = confid.except
 
-$ except.except_Item = except_List_Option
+$ except.except_List = except_List_Option
 
 // Option for exceptions to disclosing Confidential Information
 
