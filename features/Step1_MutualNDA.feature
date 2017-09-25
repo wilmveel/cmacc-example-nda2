@@ -3,8 +3,8 @@ Feature: Step1_MutualNDA
   Scenario: MutualNDA
     Given I compile "Step1_MutualNDA.cmacc"
     Then it contains the following variables and values:
-      | intro.doc_Title                                 | Mutual NDA                                                                                                                                       |
-      | term.notice_Period_TimeSpan                     | thirty (30) days                                                                                                                                 |
+      | intro.doc_Title                                 | Mutual NDA                                    |
+      | term.notice_Period_TimeSpan                     | thirty (30) days                              |
       | confid.confidential_Information.disclose_Type   | by a Party (the Disclosing Party) to the other Party (the Receiving_Party)                                                                       |
       | confid.except.except_Item.except.was_Public     | was in the public domain at the time it was disclosed to the Receiving Party                                                                  |
       | confid.except.except_Item.except.becomes_Public | entered the public domain subsequent to the time it was disclosed to the Receiving Party, through no fault of the Receiving Party             |
