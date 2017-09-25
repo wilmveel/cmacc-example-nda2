@@ -1,6 +1,6 @@
 {
   "name": "cmacc-form-nda",
-  "version": "1.1.0",
+  "version": "2.1.0",
   "description": "NDA form in cmacc",
   "main": "index.js",
   "repository": "https://github.com/cmacclang/cmacc-form-nda.git",
