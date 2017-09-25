@@ -1,0 +1,24 @@
+// Parameters
+
+// Document section numbers
+
+$ xnum = "Xnum"
+
+$ except_Xnum = "3"
+
+// Definitions
+
+$ confidential_Information = [yarn://cmacc-lib-nda/ConfidentialInformation.cmacc]
+
+// External files
+
+$ except = [yarn://cmacc-lib-nda/Except.cmacc]
+$ except.xnum = xnum
+$ except.except_Xnum = except_Xnum
+
+// Content
+
+### {{xnum}}. Confidentiality
+  
+ {{except}}
+ 

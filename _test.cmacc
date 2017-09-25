@@ -1,0 +1,32 @@
+// This is the part of the process where we start shaping the prose object into something closer to the deal. In this example a Mutual NDA
+
+// Parameters
+// -----------
+
+$ doc_Title = "Mutual NDA"
+
+$ notice_Period_TimeSpan = "thirty (30) days"
+
+// Document sections
+
+$ conf_Xnum = "1"
+
+$ confid = [./_test_Confid.cmacc]
+$ confid.xnum = conf_Xnum
+
+
+// Selecting options to make the prose object into a mutual NDA
+// ------------------------------------------------------------
+
+// Option WP_BP_Had selected for items excluded from Confidential Information
+
+$ except_Option_Selected = [yarn://cmacc-lib-nda/Except_WP_BP_Had_Finds.cmacc]
+
+$ except_Item = confid.except.except_List
+
+$ except_Item = except_Option_Selected
+
+
+// Content
+
+{{confid}}
