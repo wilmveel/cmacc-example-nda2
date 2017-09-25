@@ -64,13 +64,13 @@ $ confidential_Information = confid.confidential_Information
 
 $ confidential_Information.disclose_Type = define_Options.mutual
 
-// Option WP_BP_Had selected
+// Option WP_BP_Had selected for items excluded from Confidential Information
 
-$ except_Item_Option = [yarn://cmacc-lib-nda/Except_WP_BP_Had.cmacc]
+$ except_List_Option = [yarn://cmacc-lib-nda/Except_WP_BP_Had.cmacc]
 
-$ except_Item = confid.except.except_Item
+$ except = confid.except
 
-$ except_Item = except_Item_Option
+$ except.except_List = except_List_Option
 
 // Option for exceptions to disclosing Confidential Information
 

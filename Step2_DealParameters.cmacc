@@ -33,7 +33,7 @@ $ info_Examples = "research, experimental work, development, design details and 
 
 // Data binding
 
-$ deal = [./Step1_Mutual_NDA.cmacc]
+$ deal = [./Step1_MutualNDA.cmacc]
 
 $ intro = deal.intro
 
