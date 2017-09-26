@@ -8,13 +8,13 @@
   "license": "MIT",
   "flat": true,
   "dependencies": {
+    "cmacc-cucumber": "1.0.4",
     "cmacc-example-id": "2.0.6",
     "cmacc-lib-generalclauses": "2.0.2",
     "cmacc-lib-nda": "2.1.2",
     "cmacc-lib-us": "2.1.2"
   },
   "devDependencies": {
-    "cmacc-cucumber": "^1.0.3",
     "cmacc-compiler": "2.1.9",
     "node-fetch": "^1.7.3"
   },
