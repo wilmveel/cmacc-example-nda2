@@ -91,6 +91,10 @@ $ life_Option_Selected.reference_Confid_Except = confid.reference_Confid_Except
 
 // Content
 
+$ intro.p1_NEA.entity.full_Name = 'Willem'
+
+$ intro.p2_NEA.entity.full_Name = 'Marc'
+
 {{intro}}
 
 {{confid}}
