@@ -95,6 +95,8 @@ $ intro.p1_NEA.entity.full_Name = 'Willem'
 
 $ intro.p2_NEA.entity.full_Name = 'Marc'
 
+$ confid.deal_Confidential_Information.subject = 'subject 123'
+
 {{intro}}
 
 {{confid}}
