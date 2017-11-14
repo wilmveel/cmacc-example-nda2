@@ -1,0 +1,116 @@
+// This is the part of the process where we start shaping the prose object into something closer to the deal. In this example a Mutual NDA
+
+// Parameters
+// -----------
+
+$ doc_Title = "Mutual NDA"
+
+$ notice_Period_TimeSpan = "thirty (30) days"
+
+// Document sections
+
+$ intro = [yarn://cmacc-lib-us/_agt_Intro_2Parties.cmacc]
+$ intro.doc_Title = 'Mutual NDA 123 456 789'
+
+$ conf_Xnum = "1"
+
+$ confid = [yarn://cmacc-lib-nda/Confid.cmacc]
+$ confid.xnum = conf_Xnum
+
+$ limit_Xnum = "2"
+
+$ limit = [yarn://cmacc-lib-nda/Limit.cmacc]
+$ limit.xnum = limit_Xnum
+
+$ rep_Xnum = "3"
+
+$ rep = [yarn://cmacc-lib-nda/3rdparty.cmacc]
+$ rep.xnum = rep_Xnum
+
+$ term_Xnum = "4"
+
+$ term = [yarn://cmacc-lib-nda/TermSurvive.cmacc]
+$ term.notice_Period_TimeSpan = notice_Period_TimeSpan
+$ term.xnum = term_Xnum
+
+$ dispute_Xnum = "5"
+
+$ dispute = [yarn://cmacc-lib-nda/Dispute.cmacc]
+$ dispute.xnum = dispute_Xnum
+
+$ remedy_Xnum = "6"
+
+$ remedy = [yarn://cmacc-lib-nda/Remedy.cmacc]
+$ remedy.xnum = remedy_Xnum
+
+$ misc_Xnum = "7"
+
+$ misc = [yarn://cmacc-lib-nda/MiscClauses.cmacc]
+$ misc.xnum = misc_Xnum
+
+$ closing = [yarn://cmacc-lib-us/_agt_End_2Parties.cmacc]
+
+
+// Selecting options to make the prose object into a mutual NDA
+// ------------------------------------------------------------
+
+// Option Mutual NDA selected
+
+$ define_Options = [yarn://cmacc-lib-nda/DefineOptions.cmacc]
+
+$ disclose_Type = define_Options.mutual
+
+$ confidential_Information = confid.confidential_Information
+
+$ confidential_Information.disclose_Type = define_Options.mutual
+
+// Option WP_BP_Had selected for items excluded from Confidential Information
+
+$ except_List_Option = [yarn://cmacc-lib-nda/Except_WP_BP_Had.cmacc]
+
+$ except = confid.except
+
+$ except.except_List = except_List_Option
+
+// Option for exceptions to disclosing Confidential Information
+
+$ except_Compeled = confid.except_Compeled
+
+$ except_Compeled.sec_Selected_Option = except_Compeled.sec_Option1
+
+// Option for life definition = life duration
+
+$ life_Option = [yarn://cmacc-lib-nda/LifeDefinedDuration.cmacc]
+
+$ life_Option_Selected = confid.life.life_Option_Selected
+
+$ life_Option_Selected = life_Option
+
+$ life_Option_Selected.reference_Confid_Except = confid.reference_Confid_Except
+
+
+// Content
+
+$ intro.p1_NEA.entity.full_Name = 'Willem'
+
+$ intro.p2_NEA.entity.full_Name = 'Marc'
+
+$ confid.deal_Confidential_Information.subject = 'subject 123'
+
+{{intro}}
+
+{{confid}}
+
+{{limit}}
+
+{{rep}}
+
+{{term}}
+
+{{dispute}}
+
+{{remedy}}
+
+{{misc}}
+
+{{closing}}
